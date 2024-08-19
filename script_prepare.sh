@@ -21,5 +21,8 @@ tar xvf cqd-models.tgz
 mv models raw_cqd_pretrain_models
 cd ..
 
+echo Load the CQD module
+git clone https://github.com/uclnlp/cqd.git
+
 echo Convert the pretrain KGE
 python3 convert_cqd_pretrain_ckpts.py
